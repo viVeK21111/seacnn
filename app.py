@@ -4,6 +4,7 @@ from tensorflow.keras.preprocessing import image
 import tensorflow as tf
 import os
 os.environ["CUDA_VISIBLE_DEVICES"] = "-1"  # Disable GPU usage
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'  # Only show errors
 
 
 import numpy as np
@@ -62,5 +63,5 @@ def predict():
     
     return render_template('prediction.html',results=results) 
 
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__=="__main__":
+    app.run(threaded=True)
