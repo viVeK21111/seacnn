@@ -1,9 +1,8 @@
-![Home](static/home1.png)
+![Home](static/home.png)
 <br>
-![Prediction](static/results1.png)
+![Prediction](static/results.png)
 <br>
-<br>
-<br>
+
 ### About the project
 Multiclass class classification of Marine animals images (13k RGB) of 23 classes by finetuning resnet50 predifined model. <br>
 Model is saved as .keras file and deployed on web using streamlit. /app1.py file. <br>Acheived 82% accuracy on test data evaluation.
@@ -18,8 +17,8 @@ Model is saved as .keras file and deployed on web using streamlit. /app1.py file
 6. Initially trained on 30epochs with freezing the base model(resnet50) of train data and validation data, and then gradually unfreezing 10 layers,then 11 layers <br>
    of the base models with 25 epochs, Final validation accuracy is 81% without much overfitting. <br>
 7. Evaluated on test data which gave an accuracy of 82%. <br>
-   # you can check it in /notebooks/cnn_sage.ipynb <br>
+   ->you can check all the procedure in /notebooks/cnn_sage.ipynb <br>
 8. Deployed on flask (/app.py) locally and streamlit (/app1.py) web.<br>
-   To run the app locally < python app.py
+   To run the flask app locally run > python app.py
 <br>
 View the Site on https://seacnnn.streamlit.app/
