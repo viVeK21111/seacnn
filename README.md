@@ -9,7 +9,7 @@ Model is saved as .keras file and deployed on web using streamlit. `/app1.py` fi
 ### Steps
 0. Source of data https://www.kaggle.com/datasets/vencerlanz09/sea-animals-image-dataste
 1. Took the raw images and converted them into the numpy array, it is in /data/data.zip <br>
-   Check the `notebooks/prosea.ipynb` file  <br>
+   Check the `/notebooks/prosea.ipynb` file  <br>
 2. Preprocessed the data (undersampling to make the data balanced) <br>
 3. Splitting the data into 3 parts: train data (60%), validation data (20%) and test data(20%) <br>
 4. Converting y_train,y_val,y_test into onehot encoding (y_train,y_val,y_test are lables of data) <br>
@@ -19,7 +19,7 @@ Model is saved as .keras file and deployed on web using streamlit. `/app1.py` fi
 7. Evaluated on test data which gave an accuracy of 82%. <br>
    ->you can check all the procedure in `/notebooks/cnn_sage.ipynb` <br>
 ### Dependecies
--> To install the packages required run
+To install the packages required run
 > pip install -r requirements.txt
 ### Deployment
  Deployed on flask (`/app.py`) locally and streamlit (`/app1.py`) web.<br>
